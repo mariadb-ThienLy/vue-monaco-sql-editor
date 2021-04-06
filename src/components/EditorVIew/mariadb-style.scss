@@ -1,0 +1,165 @@
+$error: #eb5757;
+$warning: #f59d34;
+$success: #7dd012;
+$info: #2d9cdb;
+$accent: #2f99a3;
+$accent-dark: #0b718c;
+$table-border: #e7eef1;
+$text: #4f5051;
+$small-text: #6c7c7b;
+$text-subtle: #a3bac0;
+$navigation: #424f62;
+$links: #2d9cdb;
+$primary: #0e9bc0;
+$background: #ffffff;
+$deep-ocean: #003545;
+$separator: #e5e1e5;
+$reflection: #e8eef1;
+$blue-azure: #0e6488;
+$code-color: #525a65;
+$electric-ele: #abc74a;
+$field-text: #a6a4a6;
+$table-row-hover: #fafcfc;
+$black: #000;
+$fontFamily: 'Operator Mono', 'Source Code Pro', Menlo, Monaco, Consolas, Courier New, monospace;
+.cm-s-mariadb-style {
+    background: $background;
+    color: $code-color;
+    line-height: 1.75;
+    border: 1px solid $table-border;
+    font-family: $fontFamily;
+    .CodeMirror-cursor {
+        border-color: $navigation;
+    }
+    .CodeMirror-activeline-background {
+        background: red;
+    }
+    .CodeMirror-selected {
+        opacity: 0.5;
+    }
+    .cm-comment {
+        font-style: italic;
+        color: $electric-ele;
+    }
+    .cm-operator {
+        color: $field-text;
+    }
+    .cm-string {
+        color: #ffb86c;
+    }
+    .cm-string-2 {
+        color: #ffb86c;
+    }
+    .cm-tag {
+        color: #ff2c6d;
+    }
+    .cm-meta {
+        color: #b084eb;
+    }
+    .cm-number {
+        color: #ffb86c;
+    }
+    .cm-atom {
+        color: #ff2c6d;
+    }
+    .cm-keyword {
+        color: $links;
+    }
+    .cm-variable {
+        color: #ffb86c;
+    }
+    .cm-variable-2 {
+        color: #ff9ac1;
+    }
+    .cm-variable-3,
+    .cm-type {
+        color: #ff9ac1;
+    }
+    .cm-def {
+        color: #e6e6e6;
+    }
+    .cm-property {
+        color: #f3f3f3;
+    }
+    .cm-unit {
+        color: #ffb86c;
+    }
+    .cm-attribute {
+        color: #ffb86c;
+    }
+    .CodeMirror-matchingbracket {
+        border-bottom: 1px dotted #19f9d8;
+        padding-bottom: 2px;
+        color: #e6e6e6;
+    }
+    .CodeMirror-gutters {
+        background: $background;
+        border: none;
+        border-right: 1px solid $table-border;
+    }
+    .CodeMirror-linenumber {
+        color: $text-subtle;
+        text-align: center;
+        padding: 0px 8px;
+    }
+    pre.CodeMirror-line,
+    pre.CodeMirror-line-like {
+        color: $code-color;
+        padding: 0px 8px;
+    }
+}
+
+/* show hint style  */
+
+.CodeMirror-hints {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 2px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 1px solid $table-border;
+    background: $background;
+    font-size: 90%;
+    font-family: $fontFamily;
+    max-height: 20em;
+    overflow-y: auto;
+}
+
+.CodeMirror-hint {
+    margin: 0;
+    padding: 0 4px;
+    border-radius: 2px;
+    white-space: pre;
+    color: black;
+    cursor: pointer;
+}
+
+li.CodeMirror-hint-active {
+    background: #08f;
+    color: white;
+}
+
+.CodeMirror-hint-keyword {
+    color: $links;
+    &::after {
+        content: 'sql';
+        padding-left: 20px;
+        font-style: italic;
+        float: right;
+        color: $code-color;
+    }
+}
+// adds on
+.CodeMirror-hint-table {
+    color: $text-subtle;
+    &::after {
+        content: 'table';
+        padding-left: 20px;
+        font-style: italic;
+        float: right;
+        color: $code-color;
+    }
+}
