@@ -1,4 +1,4 @@
-# vue-codemirror-sql-editor
+# vue-monaco-sql-editor
 
 ## Project setup
 ```
