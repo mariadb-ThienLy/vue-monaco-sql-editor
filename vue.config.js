@@ -7,5 +7,5 @@ module.exports = {
             .use(MonacoEditorPlugin, [{ languages: ['sql'], features: ['!gotoSymbol'] }])
     },
     productionSourceMap: false,
-    publicPath: process.env.NODE_ENV === 'production' ? '/sql-monaco/' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/vue-monaco-sql-editor/' : '/',
 }
